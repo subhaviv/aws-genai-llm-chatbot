@@ -6,9 +6,9 @@ from decimal import Decimal
 from datetime import datetime
 from botocore.exceptions import ClientError
 
-from langchain.schema import BaseChatMessageHistory
-from langchain.schema.messages import (
-    BaseMessage,
+from langchain_core.chat_history import BaseChatMessageHistory
+from langchain_core.messages import BaseMessage
+from langchain_classic.schema.messages import (
     _message_to_dict,
     messages_from_dict,
     messages_to_dict,

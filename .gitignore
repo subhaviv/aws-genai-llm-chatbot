@@ -478,3 +478,5 @@ node_modules
 AmazonQ.md
 .DS_Store
 cdk-exports.json
+CLAUDE.md
+cdk-outputs.json

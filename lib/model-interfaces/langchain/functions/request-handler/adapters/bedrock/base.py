@@ -10,8 +10,7 @@ from langchain_core.messages import BaseMessage
 from langchain_core.messages.ai import AIMessage
 from langchain_core.messages.human import HumanMessage
 from langchain_aws import ChatBedrockConverse
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.prompts.prompt import PromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, PromptTemplate
 from adapters.shared.prompts.system_prompts import (
     prompts,
     locale,

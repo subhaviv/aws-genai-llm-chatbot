@@ -159,6 +159,7 @@ def _does_model_support_documents(model_name):
         and not re.match(r"^amazon.nova-reel*", model_name)
         and not re.match(r"^amazon.nova-canvas*", model_name)
         and not re.match(r"^amazon.nova-micro*", model_name)
+        and not re.match(r"^openai.gpt-oss*", model_name)
     )
 
 

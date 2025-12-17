@@ -260,8 +260,8 @@ class TestBedrockAgentAdapter:
         adapter.chat_history.table = Mock()
         adapter.chat_history.table.put_item = Mock()
 
-        with patch("langchain.schema.messages_to_dict", return_value=[]):
-            with patch("langchain.schema._message_to_dict", return_value={}):
+        with patch("langchain_classic.schema.messages.messages_to_dict", return_value=[]):
+            with patch("langchain_classic.schema.messages._message_to_dict", return_value={}):
                 with patch("langchain_core.messages.AIMessage"):
                     result = adapter.run("test prompt")
 
@@ -291,8 +291,8 @@ class TestBedrockAgentAdapter:
         adapter.chat_history.table = Mock()
         adapter.chat_history.table.put_item = Mock()
 
-        with patch("langchain.schema.messages_to_dict", return_value=[]):
-            with patch("langchain.schema._message_to_dict", return_value={}):
+        with patch("langchain_classic.schema.messages.messages_to_dict", return_value=[]):
+            with patch("langchain_classic.schema.messages._message_to_dict", return_value={}):
                 with patch("langchain_core.messages.AIMessage"):
                     result = adapter.run("test prompt")
 
@@ -324,8 +324,8 @@ class TestBedrockAgentAdapter:
         adapter.chat_history.table = Mock()
         adapter.chat_history.table.put_item = Mock()
 
-        with patch("langchain.schema.messages_to_dict", return_value=[]):
-            with patch("langchain.schema._message_to_dict", return_value={}):
+        with patch("langchain_classic.schema.messages.messages_to_dict", return_value=[]):
+            with patch("langchain_classic.schema.messages._message_to_dict", return_value={}):
                 with patch("langchain_core.messages.AIMessage"):
                     with patch(
                         "adapters.bedrock_agent.agent.json_dumps_decimal"
@@ -384,8 +384,8 @@ class TestBedrockAgentAdapter:
                 adapter.chat_history.table = Mock()
                 adapter.chat_history.table.put_item = Mock()
 
-                with patch("langchain.schema.messages_to_dict", return_value=[]):
-                    with patch("langchain.schema._message_to_dict", return_value={}):
+                with patch("langchain_classic.schema.messages.messages_to_dict", return_value=[]):
+                    with patch("langchain_classic.schema.messages._message_to_dict", return_value={}):
                         with patch("langchain_core.messages.AIMessage"):
                             result = adapter.run(
                                 "Analyze this image",

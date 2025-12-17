@@ -460,7 +460,7 @@ class BedrockAgentAdapter(ModelAdapter):
             # We need to manually add the message to DynamoDB to handle
             # float values
             from langchain_core.messages import AIMessage
-            from langchain.schema import messages_to_dict, _message_to_dict
+            from langchain_classic.schema.messages import messages_to_dict, _message_to_dict
             from datetime import datetime
 
             # Get existing messages
